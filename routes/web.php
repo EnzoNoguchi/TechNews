@@ -23,7 +23,7 @@ use App\Http\Controllers\CarrosController;
 Route::get('/',[HomeController::class,'MostrarHome'])->name('home');
 
 
-Route::get('/editar-caminhao',[CaminhaoController::class,'Editar'])->name('editar');
+Route::get('/editar-caminhao',[CaminhaoController::class,'MostrarEditarCaminhao'])->name('editar');
 
 Route::get('/cadastrar-caminhao',[CaminhaoController::class,'FormularioCadastro'])->name('cadastrar-caminhao');
 
@@ -33,7 +33,9 @@ Route::post('/cadastrar-caminhao',[CaminhaoController::class,'SalvarBanco'])->na
 
 
 
+
 Route::get('/cadastrar-carro',[CarrosController::class,'FormularioCadastroCarro'])->name('cadastrar-carro');
 
-
 Route::post('/cadastrar-carro',[CarrosController::class,'SalvarBancoCarro'])->name('salvar-bancoCarro');
+
+Route::get('/editar-carro',[CarrosController::class,'MostrarEditarCarro'])->name('editar-carro');

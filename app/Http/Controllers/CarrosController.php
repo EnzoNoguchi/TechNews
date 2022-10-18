@@ -13,8 +13,14 @@ class CarrosController extends Controller
         return view('cadastrarCarro');
     }
 
-    public function EditarCarro(){
-        return view('editarCarro');
+    public function MostrarEditarCarro(){
+
+        $dadosCarro = Carros::all();
+        //dd($dadosCarro);
+        return view('editarCarro', [
+            'registrosCarro' => $dadosCarro
+        ]);
+        
     }
 
 

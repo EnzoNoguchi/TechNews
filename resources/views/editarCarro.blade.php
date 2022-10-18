@@ -34,12 +34,12 @@
 
 
 
-    @foreach($registrosCaminhao as $registrosCaminhoes)
+    @foreach($registrosCarro as $registrosCarros)
     <tr>
-      <th scope="row">{{$registrosCaminhoes->id}}</th>
-      <td>{{$registrosCaminhoes->modelo}}</td>
-      <td>{{$registrosCaminhoes->marca}}</td>
-      <td>{{$registrosCaminhoes->ano}}</td>
+      <th scope="row">{{$registrosCarros->id}}</th>
+      <td>{{$registrosCarros->modelo}}</td>
+      <td>{{$registrosCarros->marca}}</td>
+      <td>{{$registrosCarros->ano}}</td>
       <td>
             <button type="button" class="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
