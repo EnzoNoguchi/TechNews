@@ -43,7 +43,7 @@
             <li><a class="dropdown-item" href="cadastrar-carro">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="editar-carro">Editar/Deletar</a></li>
+            <li><a class="dropdown-item" href="editar-carro">Gerenciar</a></li>
           </ul>
         </li>
 
