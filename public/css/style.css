@@ -1,4 +1,10 @@
 
+body {
+    height: auto;
+    width: auto;
+}
+
+
 .cadastroCaminhao{
     background-color: brown;
     margin-top: 5%;
@@ -19,4 +25,54 @@
 .formulario {
     margin: 5%;
     margin-top: 7%;
+}
+
+
+.titulo1 {
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.overtexto {
+    color: aliceblue;
+    font-size: 250%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.placa1 {
+    color: aliceblue;
+    font-size: 250%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.menu1 {
+    position: absolute;
+    margin-left: 67%;
+    font-size: 120%;
+}
+
+
+.pesquisa {
+    size: 10px;
+    padding-left: 5%;
+    margin-top: 1%;
+
+}
+
+
+.cooler {
+    background-image: url(../img/coolermaster.jpg);
+    margin-bottom: 70%;
+
+
+
+}
+
+
+.branco {
+    background-color: aliceblue;
+    
 }
