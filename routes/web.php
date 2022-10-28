@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\CaminhaoController;
-use App\Http\Controllers\CarrosController;
+
+use App\Http\Controllers\NoticiasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,42 +26,22 @@ Route::get('/',[HomeController::class,'MostrarHome'])->name('home');
 
 
 
-//====================== R O T A  C A M I N H A O ======================
-
-Route::get('/editar-caminhao',[CaminhaoController::class,'MostrarEditarCaminhao'])->name('editar-caminhao');
-
-Route::get('/cadastrar-caminhao',[CaminhaoController::class,'FormularioCadastro'])->name('cadastrar-caminhao');
-
-Route::post('/cadastrar-caminhao',[CaminhaoController::class,'SalvarBanco'])->name('salvar-banco');
+//====================== R O T A S ======================
 
 
+Route::get('/cadastrar-noticia',[NoticiasController::class,'FormularioCadastroNoticia'])->name('cadastrar-noticia');
 
-//deletarCaminhao
-Route::delete('/editar-caminhao/{registrosCaminhoes}',[CaminhaoController::class,'ApagarBancoCaminhao'])->name('apagar-caminhao');
+Route::post('/cadastrar-noticia',[NoticiasController::class,'SalvarBancoNoticia'])->name('salvar-bancoNoticia');
 
-//AlterarCaminhao
-Route::get('/alterar-caminhao/{registrosCaminhoes}',[CaminhaoController::class,'MostrarAlterarCaminhao'])->name('alterar-caminhao');
-
-Route::put('/editar-caminhao/{registrosCaminhoes}',[CaminhaoController::class,'AlterarBancoCaminhao'])->name('alterar-banco-caminhao');
-
-
-
-//====================== R O T A  C A R R O ======================
-
-
-Route::get('/cadastrar-carro',[CarrosController::class,'FormularioCadastroCarro'])->name('cadastrar-carro');
-
-Route::post('/cadastrar-carro',[CarrosController::class,'SalvarBancoCarro'])->name('salvar-bancoCarro');
-
-Route::get('/editar-carro',[CarrosController::class,'MostrarEditarCarro'])->name('editar-carro');
+Route::get('/editar-noticia',[NoticiasController::class,'MostrarEditarNoticia'])->name('editar-noticia');
 
 
 
 
-//deletarCarro
-Route::delete('/editar-carro/{registrosCarros}',[CarrosController::class,'ApagarBancoCarro'])->name('apagar-carro');
+//deletarNoticia
+Route::delete('/editar-noticia/{registrosNoticias}',[NoticiasController::class,'ApagarBancoNoticia'])->name('apagar-noticia');
 
-//AlterarCarro
-Route::get('/alterar-carro/{registrosCarros}',[CarrosController::class,'MostrarAlterarCarro'])->name('alterar-carro');
+//AlterarNoticia
+Route::get('/alterar-noticia/{registrosNoticias}',[NoticiasController::class,'MostrarAlterarNoticia'])->name('alterar-noticia');
 
-Route::put('/editar-carro/{registrosCarros}',[CarrosController::class,'AlterarBancoCarro'])->name('alterar-banco-carro');
+Route::put('/editar-noticia/{registrosNoticias}',[NoticiasController::class,'AlterarBancoNoticia'])->name('alterar-banco-noticia');

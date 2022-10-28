@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('modelo');
             $table->string('marca');
-            $table->string('ano');
-            $table->string('cor');
+            $table->string('game');
+            $table->string('hardware');
             $table->string('valor');
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('carros');
+        Schema::dropIfExists('noticias');
     }
 };

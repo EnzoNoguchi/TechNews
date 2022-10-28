@@ -1,7 +1,14 @@
 
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: auto;
-    width: auto;
+    width: 100%;
 }
 
 
@@ -63,16 +70,50 @@ body {
 }
 
 
-.cooler {
-    background-image: url(../img/coolermaster.jpg);
-    margin-bottom: 70%;
 
-
+.caixabranca {
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    height: 2000px;
+    position:relative;
+    margin-top: 3%;
+    margin: 5% auto;
+    border-radius: 15px;
+    
+    
+    
 
 }
 
-
-.branco {
-    background-color: aliceblue;
+.body1{
+    background-image: url(../img/coolermaster.png);
+    margin-bottom: 10%;
     
+    
+}
+
+
+.card{
+    position: top 10%;
+    margin: 4%;
+   
+    
+}
+
+
+.slideultimo {
+    margin: 4%;
+}
+
+
+
+.footer1{
+    background-color: rgb(24, 24, 24);
+    border-radius: 14px;
+    position:relative;   
+
+}
+
+.footertexto {
+    margin-left: 40%;
 }
