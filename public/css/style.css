@@ -8,30 +8,24 @@
 
 body {
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 
-.cadastroCaminhao{
-    background-color: brown;
-    margin-top: 5%;
-    padding: 3%;
-    margin-left: 35%;
-    width: 400px;
-    border-radius: 5%;
-}
 
 
 
 .titulo {
     margin-top: 5%;
     margin-bottom: 5%;
+    padding-top: 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 
 .formulario {
-    margin: 5%;
-    margin-top: 7%;
+    margin: 10%;
+    padding-bottom: 10%;
 }
 
 
@@ -74,7 +68,7 @@ body {
 .caixabranca {
     background-color: rgb(255, 255, 255);
     width: 1200px;
-    height: 2000px;
+    height: auto;
     position:relative;
     margin-top: 3%;
     margin: 5% auto;
@@ -86,9 +80,10 @@ body {
 }
 
 .body1{
-    background-image: url(../img/coolermaster.png);
-    margin-bottom: 10%;
+    background-color: rgb(40, 46, 31);
+
     
+ 
     
 }
 
@@ -116,4 +111,49 @@ body {
 
 .footertexto {
     margin-left: 40%;
+}
+
+
+.buscaEditar {
+
+    padding: 5%;
+}
+
+.alterarEspaco {
+    padding: 10%;
+
+}
+
+
+.atualizarbotao {
+    margin-top: 15%;
+    text-align: center;
+}
+
+
+
+
+.alterarcaixa1 {
+    margin: 3%;
+}
+
+
+.alterarcaixa2 {
+    margin: 3%;
+}
+
+
+.alterarcaixa3 {
+    margin: 3%;
+}
+
+
+
+
+
+
+
+
+.topico10 {
+    
 }

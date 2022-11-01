@@ -9,6 +9,6 @@ class Noticias extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'modelo', 'marca', 'game', 'hardware', 'valor'     
+        'topico', 'titulo', 'duvida'     
     ];
 }

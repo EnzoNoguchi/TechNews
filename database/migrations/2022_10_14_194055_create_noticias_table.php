@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('carros', function (Blueprint $table) {
+        Schema::create('noticias', function (Blueprint $table) {
             $table->id();
-            $table->string('modelo');
-            $table->string('marca');
-            $table->string('game');
-            $table->string('hardware');
-            $table->string('valor');
+            $table->string('topico');
+            $table->string('titulo');
+            $table->string('duvida');
             $table->timestamps();
         });
     }

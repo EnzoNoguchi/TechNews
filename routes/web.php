@@ -45,3 +45,15 @@ Route::delete('/editar-noticia/{registrosNoticias}',[NoticiasController::class,'
 Route::get('/alterar-noticia/{registrosNoticias}',[NoticiasController::class,'MostrarAlterarNoticia'])->name('alterar-noticia');
 
 Route::put('/editar-noticia/{registrosNoticias}',[NoticiasController::class,'AlterarBancoNoticia'])->name('alterar-banco-noticia');
+
+
+
+
+
+
+
+
+
+Route::get('/ver-noticia',[NoticiasController::class,'MostrarVerNoticia'])->name('ver-noticia');
+
+Route::put('/ver-noticia/{registrosNoticias}',[NoticiasController::class,'AlterarVerNoticia'])->name('alterar-ver-noticia');

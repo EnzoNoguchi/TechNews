@@ -37,17 +37,36 @@
 
 
 
-      <!-------------------------------- O P C O E S ------------------->
+
+
+
+
+
+
+<!-------------------------------- O P C O E S ------------------------->
  
 
 <!----------------------------------------------------------------------->
         
 
 
-
-          <li class="nav-item dropdown">
+        
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Notícias
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{route('ver-noticia')}}">Ver Notícias</a></li>
+          </ul>
+        </li>
+
+
+
+        
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Notícias Admin
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{route('cadastrar-noticia')}}">Cadastrar Notícias</a></li>
@@ -59,8 +78,7 @@
 
 
 
-
-        <!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
 
         <div class="pesquisa">
         <form class="d-flex">
@@ -82,7 +100,7 @@
 
 
 
-  <!-------------------------------- C A R O U S E L ------------------->
+<!-------------------------------- C A R O U S E L ------------------->
 
 
 
@@ -186,6 +204,20 @@
 
 
 
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+
+</body>
 <div class="footer1">
 
 <section class="hero text-white py-5 flex-grow-1">
@@ -242,14 +274,4 @@
 
 </div>
 
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
 </html>

@@ -19,11 +19,11 @@ class NoticiasController extends Controller
         //dd($dadosNoticias);
 
         $dadosNoticias = Noticias::query();
-        $dadosNoticias->when($request->marca,function($query, $v1){
-            $query->where('marca','like','%'.$v1.'%');
+        $dadosNoticias->when($request->topico,function($query, $v1){
+            $query->where('topico','like','%'.$v1.'%');
         });
 
-        $dadosNoticias = $dadosNoticia->get();
+        $dadosNoticias = $dadosNoticias->get();
         return view('editarNoticia', [
             'registrosNoticia' => $dadosNoticias
         ]);
@@ -33,11 +33,9 @@ class NoticiasController extends Controller
 
     public function SalvarBancoNoticia(Request $request){
         $dadosNoticia = $request->validate([
-            'modelo' => 'string|required',
-            'marca' => 'string|required',
-            'game' => 'string|required',
-            'hardware' => 'string|required', 
-            'valor' => 'string|required'
+            'topico' => 'string|required',
+            'titulo' => 'string|required',
+            'duvida' => 'string|required'
         ]); 
 
         Noticias::create($dadosNoticia);
@@ -54,18 +52,17 @@ class NoticiasController extends Controller
  
 
 
-     public function MostrarAlterarNoticia(Carros $registrosNoticias){
+     public function MostrarAlterarNoticia(Noticias $registrosNoticias){
         return view('alterarNoticia',['registrosNoticias' => $registrosNoticias]); 
     }
 
 
     public function AlterarBancoNoticia(Noticias $registrosNoticias, Request $request){
         $banco = $request->validate([
-            'modelo' => 'string|required',
-            'marca' => 'string|required',
-            'game' => 'string|required',
-            'hardware' => 'string|required', 
-            'valor' => 'string|required'
+            'topico' => 'string|required',
+            'titulo' => 'string|required',
+            'duvida' => 'string|required'
+   
         ]);
 
         $registrosNoticias->fill($banco);
@@ -75,5 +72,56 @@ class NoticiasController extends Controller
 
         return Redirect::route('editar-noticia');
     }
+
+
+    
+
+
+
+
+
+
+
+    public function AlterarVerNoticia(Noticias $registrosNoticias, Request $request){
+        $banco = $request->validate([
+            'topico' => 'string|required',
+            'titulo' => 'string|required',
+            'duvida' => 'string|required'
+   
+        ]);
+
+        $registrosNoticias->fill($banco);
+        $registrosNoticias->save();
+
+        //dd($registrosNoticias);
+
+        return Redirect::route('ver-noticia');
+    }
+
+
+
+
+
+    public function MostrarVerNoticia(Request $request){
+
+        $dadosNoticias = Noticias::all();
+        //dd($dadosNoticias);
+
+        $dadosNoticias = Noticias::query();
+        $dadosNoticias->when($request->topico,function($query, $v1){
+            $query->where('topico','like','%'.$v1.'%');
+        });
+
+        $dadosNoticias = $dadosNoticias->get();
+        return view('verNoticia', [
+            'registrosNoticia' => $dadosNoticias
+        ]);
+        
+    }
+
+
+
+
+    
 }
 
