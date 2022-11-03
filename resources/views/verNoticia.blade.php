@@ -12,7 +12,7 @@
 
 
 
-<form method="get" action="/editar-noticia">
+<form method="get" action="{{route('ver-noticia')}}">
 <div class="row center">
   <div class="col">
     <input type="text" id="topico" name="topico" class="form-control" placeholder="Busque por tópico" aria-label="First name">
